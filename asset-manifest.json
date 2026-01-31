@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/murapalaanusha-25/Advanced_product_listing/static/css/main.2799b9c3.css",
+    "main.js": "/murapalaanusha-25/Advanced_product_listing/static/js/main.d6d9b037.js",
+    "index.html": "/murapalaanusha-25/Advanced_product_listing/index.html",
+    "main.2799b9c3.css.map": "/murapalaanusha-25/Advanced_product_listing/static/css/main.2799b9c3.css.map",
+    "main.d6d9b037.js.map": "/murapalaanusha-25/Advanced_product_listing/static/js/main.d6d9b037.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2799b9c3.css",
+    "static/js/main.d6d9b037.js"
+  ]
+}
