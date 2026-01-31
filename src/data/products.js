@@ -1,6 +1,6 @@
 const products =[{
     id:1,
-    image:"/product1.jpg",
+    image: process.env.PUBLIC_URL+"/product1.jpg",
     title:"Microsoft Surface Laptop Copilot Edition",
     price: 48999,
     category: "laptop",
@@ -17,7 +17,7 @@ const products =[{
 },
 {
   id: 2,
-  image: "/product2.jpg",
+  image:  process.env.PUBLIC_URL+"/product2.jpg",
   title: "Samsung Galaxy S25 Ultra 5G Smartphone",
   price: 15499,
   category: "smartphone",
@@ -33,7 +33,7 @@ const products =[{
 
 {
   id: 3,
-  image: "/product3.jpg",
+  image:  process.env.PUBLIC_URL+"/product3.jpg",
   title: "iQOO Smartphone 7200mAh Battery",
   price: 28998,
   category: "smartphone",
@@ -48,7 +48,7 @@ const products =[{
 
 {
   id: 4,
-  image: "/product4.jpg",
+  image:  process.env.PUBLIC_URL+"/product4.jpg",
   title: "Apple iPhone 17 Pro Smartphone 256GB",
   price: 145659,
   category: "smartphone",
@@ -63,7 +63,7 @@ const products =[{
 
 {
   id: 5,
-  image: "/product5.jpg",
+  image:  process.env.PUBLIC_URL+"/product5.jpg",
   title: "Apple iPhone 14 Pro Max Smartphone",
   price: 129999,
   category: "smartphone",
@@ -83,7 +83,7 @@ const products =[{
 
 {
   id: 6,
-  image: "/product6.jpg",
+  image:  process.env.PUBLIC_URL+"/product6.jpg",
   title: "Samsung Galaxy S23 Ultra Smartphone",
   price: 92999,
   category: "smartphone",
@@ -103,7 +103,7 @@ const products =[{
 
 {
   id: 7,
-  image: "/product7.jpg",
+  image:  process.env.PUBLIC_URL+"/product7.jpg",
   title: "HP Pavilion Gaming Laptop RTX 3050",
   price: 78499,
   category: "laptop",
@@ -123,7 +123,7 @@ const products =[{
 
 {
   id: 8,
-  image: "/product8.jpg",
+  image:  process.env.PUBLIC_URL+"/product8.jpg",
   title: "Boat Rockerz 450 Wireless Headphones",
   price: 1599,
   category: "accessories",
@@ -141,7 +141,7 @@ const products =[{
 
 {
   id: 9,
-  image: "/product9.jpg",
+  image:  process.env.PUBLIC_URL+"/product9.jpg",
   title: "Sony Bravia 55 Inch 4K Smart TV",
   price: 69999,
   category: "television",
@@ -158,7 +158,7 @@ const products =[{
 },
 {
     id:10,
-    image:"/product10.jpg",
+    image: process.env.PUBLIC_URL+"/product10.jpg",
     title:"Asus Laptop Copilot Edition",
     price: 98999,
     category: "laptop",
@@ -175,7 +175,7 @@ const products =[{
 },
 {
     id:11,
-    image:"/product11.jpg",
+    image: process.env.PUBLIC_URL+"/product11.jpg",
     title:"Lenovo Laptop Copilot Edition",
     price: 58999,
     category: "laptop",
@@ -192,7 +192,7 @@ const products =[{
 },
 {
   id: 12,
-  image: "/product12.jpg",
+  image:  process.env.PUBLIC_URL+"/product12.jpg",
   title: "LG 65 Inch 4K Smart TV",
   price: 89999,
   category: "television",
@@ -209,7 +209,7 @@ const products =[{
 },
 {
   id: 13,
-  image: "/product13.jpg",
+  image:  process.env.PUBLIC_URL+"/product13.jpg",
   title: "Samsung 55 Inch 4K Smart TV",
   price: 62979,
   category: "television",
@@ -226,7 +226,7 @@ const products =[{
 },
 {
   id: 14,
-  image: "/product14.jpg",
+  image:  process.env.PUBLIC_URL+"/product14.jpg",
   title: "Toshiba 70 Inch 4K Smart TV",
   price: "56,999",
   category: "television",
@@ -243,7 +243,7 @@ const products =[{
 },
 {
   id: 15,
-  image: "/product15.jpg",
+  image:  process.env.PUBLIC_URL+"/product15.jpg",
   title: "Redmi Wireless earphones",
   price: 2399,
   category: "accessories",
@@ -260,7 +260,7 @@ const products =[{
 },
 {
   id: 16,
-  image: "/product16.jpg",
+  image:  process.env.PUBLIC_URL+"/product16.jpg",
   title: "Boat Wireless earphones",
   price: 1299,
   category: "accessories",
@@ -277,7 +277,7 @@ const products =[{
 },
 {
   id: 17,
-  image: "/product17.jpg",
+  image:  process.env.PUBLIC_URL+ "/product17.jpg",
   title: "Boult Wireless Headphones",
   price: 1599,
   category: "accessories",
@@ -294,7 +294,7 @@ const products =[{
 },
 {
   id: 18,
-  image: "/product18.jpg",
+  image:  process.env.PUBLIC_URL+"/product18.jpg",
   title: "Apple Wireless Headphones",
   price: 25599,
   category: "accessories",
