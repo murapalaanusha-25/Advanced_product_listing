@@ -6,26 +6,26 @@ function Cart() {
     0
   );
   return (
-  <div className="cart-container">
-    <h1 className="cart-title">Cart</h1>
+  <div className="max-w-[800px] my-5 mx-auto bg-[whitesmoke] p-[20px] rounded-xl shadow-[0px_3px_8px_rgba(0,0,0,0.15)]">
+    <h1 className="font-bold items-center mb-[20px]">Cart</h1>
     {cartItems.map((item) => (
-      <div key={item.id} className="cart-item">
-        <div className="cart-left">
+      <div key={item.id} className="flex items-center justify-between p-[12px] border-b border-grey-200">
+        <div className="flex items-center gap-[15px]">
           <img src={item.image} alt={item.title} width="70" />
-          <div className="cart-details">
+          <div className="m-0 text-base">
             <h3>{item.title}</h3>
             <p>{item.price}/-</p>
           </div>
         </div>
-        <div className="cart-actions">
-          <button onClick={() => decreaseQty(item.id)}>-</button>
+        <div className="flex gap-[8px] items-center">
+          <button className="w-auto h-7 py-[4px] px-[10px]" onClick={() => decreaseQty(item.id)}>-</button>
           <span>{item.quantity}</span>
-          <button onClick={() => addToCart(item)}>+</button>
-          <button onClick={() => removeFromCart(item.id)}>Remove</button>
+          <button className="w-auto h-7 py-[4px] px-[10px]" onClick={() => addToCart(item)}>+</button>
+          <button className="w-auto h-7 py-[4px] px-[10px]" onClick={() => removeFromCart(item.id)}>Remove</button>
         </div>
       </div>
     ))}
-  <h2 className="cart-total">Total: {total}/-</h2>
+  <h2 className="text-right mt-[20px] font-bold">Total: {total}/-</h2>
   </div>
 );
 }

@@ -16,8 +16,11 @@ function Login({ setIsLoggedIn }) {
   };
   return (
     <form onSubmit={submit}>
-      <div className="login-page">
-  <div className="login-box">
+      <div className="flex justify-center items-center h-screen">
+  <div className="bg-[rgb(236,5,36)] w-[300px] p-[25px] rounded-[20px] 
+            flex flex-col justify-center items-center 
+            shadow-[0px_4px_12px_rgba(0,0,0,0.2)] 
+            font-sans font-bold text-white">
         <h1>Login</h1>
         <label>Username: </label>
       <input placeholder="Username" onChange={(e) => setUser(e.target.value)} /><br/><br/>
