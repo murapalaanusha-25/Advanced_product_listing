@@ -8,7 +8,7 @@ function Navbar({ setIsLoggedIn }) {
     navigate("/login");
   };
   return (
-    <div className="navbar">
+    <div className="p-[10px] flex justify-between items-center color-black font-bold">
       <h2 onClick={() => navigate("/products")}>Product Listing</h2>
       <button onClick={() => navigate("/cart")}>
         Cart ({cartItems.length})

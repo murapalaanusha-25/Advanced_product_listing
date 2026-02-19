@@ -228,7 +228,7 @@ const products =[{
   id: 14,
   image:  process.env.PUBLIC_URL+"/product14.jpg",
   title: "Toshiba 70 Inch 4K Smart TV",
-  price: "56,999",
+  price: 56999,
   category: "television",
   description: [
     "Brand: Toshiba",

@@ -23,7 +23,8 @@ function Products({ setIsLoggedIn }) {
   return (
     <>
       <Navbar setIsLoggedIn={setIsLoggedIn} />
-      <div className="topbar" style={{ margin: "10px 0" }}>
+      <div className="px-10 py-[15px] text-black text-[20px] font-semi-bold bg-gray-500 w-full 
+            flex justify-center items-center gap-5" style={{ margin: "10px 0" }}>
         <input
           placeholder="Search"
           onChange={(e) => setSearch(e.target.value)}
@@ -42,23 +43,23 @@ function Products({ setIsLoggedIn }) {
           <option value="high">High to Low</option>
         </select>
       </div>
-      <div className="card">
+      <div className="grid gap-[15px] p-[15px] grid-cols-1 md:grid-cols-3 gap-4 b-black">
         {filtered.map((p) => {
           const qty = getQty(p.id);
   return (
-            <div key={p.id} className="product-card">
-              <img src={p.image} alt={p.title} className="product-image" />
-              <p className="product-title">{p.title}</p>
+            <div key={p.id}>
+              <img src={p.image} alt={p.title} className="mx-auto" />
+              <p className="font-bold">{p.title}</p>
               <div className="price-action-row">
-                <p className="product-price">{p.price}/-</p>
+                <p className="color-green">{p.price}/-</p>
                 {qty === 0 ? (
                   <button onClick={() => addToCart(p)}>Add to Cart</button>
                 ) : (
-                  <div className="qty-controls">
-                    <button onClick={() => decreaseQty(p.id)}>-</button>
+                  <div >
+                    <button className="w-auto h-7 py-[4px] px-[10px]" onClick={() => decreaseQty(p.id)}>-</button>
                     <span>{qty}</span>
-                    <button onClick={() => addToCart(p)}>+</button>
-                    <button onClick={() => removeFromCart(p.id)}>Remove</button>
+                    <button className="w-auto h-7 py-[4px] px-[10px]" onClick={() => addToCart(p)}>+</button>
+                    <button className="w-auto h-7 py-[4px] px-[10px]" onClick={() => removeFromCart(p.id)}>Remove</button>
                   </div>
                 )}
                 <button onClick={() => navigate(`/products/${p.id}`)}>

@@ -6,10 +6,10 @@ function ProductDetails() {
   const product = products.find((p) => p.id === Number(id));
   if (!product) return <h2>Product not found</h2>;
   return (
-    <div className="description">
-      <img src={product.image} alt={product.title} />
-      <h1 className="product-title">{product.title}</h1>
-      <h2 className="product-price">{product.price}/-</h2>
+    <div className="my-5 mx-auto max-w-[800px] text-center justify-center bg-gray-100">
+      <img className="mx-auto" src={product.image} alt={product.title} />
+      <h1 className="font-bold ">{product.title}</h1>
+      <h2 className="color-green">{product.price}/-</h2>
       {Object.entries(product.description).map(([k, v]) => (
         <p key={k}>{v}
         </p>
